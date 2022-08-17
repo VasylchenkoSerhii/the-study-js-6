@@ -10,14 +10,16 @@
   </head>
   <body>
     <main>
-      <form class="search-form" id="search-form">
-        <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
-        <button type="submit">Search</button>
-      </form>
-      <div class="gallery">
-        <!-- Карточки изображений -->
+      <div class="container">
+        <form class="search-form" id="search-form">
+          <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
+          <button type="submit" class="search-btn"></button>
+        </form>
+        <div class="gallery">
+          <!-- Карточки изображений -->
+        </div>
+        <button type="button" class="load-more-btn hide">Load more</button>
       </div>
-      <button type="button" class="load-more hide">Load more</button>
     </main>
   </body>
 </html>

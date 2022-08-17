@@ -1,7 +1,7 @@
-import axios from 'axios';
+
 import {refs} from './js/refs';
 import { fetchImages, PAGE_SIZE } from './js/fetch-img';
-import { Notify } from 'notiflix/build/notiflix-notify-aio';
+import { Notify } from 'notiflix';
 
 export let currentPage = 1;
 
@@ -10,7 +10,7 @@ refs.loadMoreBtn.addEventListener('click', handleSearchImages);
 
 function handleSearchImages(e) {
     e.preventDefault();
-    if (refs.input.value.length === 0) {
+  if (refs.input.value.trim() === '') {
             return;
     }
     
@@ -30,7 +30,8 @@ function handleSearchImages(e) {
             }
             const marKup = createMarKupGallery(data.hits);
             if (e.type === 'submit') {
-                refs.gallery.innerHTML = marKup;
+              refs.gallery.innerHTML = marKup;
+              Notify.success(`Hooray! We found ${data.totalHits} images.`);
                 return;
             }
             refs.gallery.insertAdjacentHTML('beforeend', marKup);

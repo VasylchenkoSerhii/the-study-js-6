@@ -3,5 +3,5 @@ export const refs = {
     input: document.querySelector('[name="searchQuery"]'),
     searchBtn: document.querySelector('button'),
     gallery: document.querySelector('.gallery'),
-    loadMoreBtn: document.querySelector('.load-more'),
+    loadMoreBtn: document.querySelector('.load-more-btn'),
 };
