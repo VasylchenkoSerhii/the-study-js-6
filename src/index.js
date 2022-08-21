@@ -5,6 +5,7 @@ import { Notify } from 'notiflix';
 
 export let currentPage = 1;
 
+
 refs.form.addEventListener('submit', handleSearchImages);
 refs.loadMoreBtn.addEventListener('click', handleSearchImages);
 
