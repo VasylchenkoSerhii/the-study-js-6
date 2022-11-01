@@ -63,12 +63,8 @@ input {
     gap: 10px;
 }
 
-/* .galerry__link {
-    display: block;
-} */
 
 .photo-card {
-    /* max-width: 290px; */
     overflow: hidden;
     border: 1px solid rgb(212, 211, 211);
     border-radius: 7% 3% / 6% 4%;
